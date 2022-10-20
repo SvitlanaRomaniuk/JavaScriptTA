@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 2</h1>
+    <p id='text'>I learning JavaScript events!</p>
+    <div>
+        <button onclick="changeCSS()">Change style!</button>
+    </div>
+    <h1>Task 3</h1>
+    <div>
+        <button onclick="functionClick()">Click to make the page blue.</button>
+        <button ondblclick="doubleClick()">Double-click to make the page pink.</button>
+        <button onmousedown="mouseDown()" onmouseup="mouseUp()">Click and hold to make the page brown.</button>
+        <a onmouseover="changeColor()" onmouseout="normalColor()"> Hover over to make page yellow.</a>
+    </div>
+    <h1>Task 4</h1>
+    <label for="name">Choose a name:</label>
+    <select name="name" id="firstname">
+        <option value="peter">Peter</option>
+        <option value="john">John</option>
+        <option value="alise">Alise</option>
+        <option value="alex">Alex</option>
+        <option value="iren">Iren</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="deleteItem()" value="Choose and Delete">
+    </form>
+    <h1>Task 5</h1>
+    <!-- <button id="live">Live button</button> -->
+    <button onclick="mouseClick()" onmouseover="mouseOver()" onmouseout="mouseOut()">Live button</button>
+    <div id="live" style="height: 200px ; overflow: auto;"></div>
+    <h1>Task 6</h1>
+    <p>Resize the browser window to fire the <code>resize</code> event.</p>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
+    <h1>Task 7</h1>
+    <select name="country" id="country" onchange="onCountryChanged()" style="width: 100px;">
+        <option value="ger">Germany</option>
+        <option value="usa">USA</option>
+        <option value="ukr">Ukraine</option>
+    </select>
+    <select name="cities" id="cities" onchange="onCityChanged()" style="width: 100px;"></select>
+    <p id="selectedCity"></p>
+    <script src="./index.js"></script>
+</body>
+
+</html>
